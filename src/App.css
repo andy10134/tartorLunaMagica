@@ -7,6 +7,33 @@
     pointer-events: none;
 }
 
+@font-face {
+    font-family: 'Zodiac';
+    src: url(../public/fonts/Zodiac.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url(../public/fonts/Raleway-Regular.ttf) format('truetype');
+}
+
+@font-face {
+    font-family: 'GreatVibes';
+    src: url(../public/fonts/GreatVibes-Regular.ttf) format('truetype');
+}
+
+
+
+.zodiac-icon{
+    font-family: 'Zodiac';
+    /* font-size: 460px;
+    padding-left: 15px;
+    margin-top: -7pc; */
+    font-size: 25rem;
+    padding-left: 15px;
+    margin-top: -6pc;
+}
+
 @media (prefers-reduced-motion: no-preference) {
     .App-logo {
         animation: App-logo-spin infinite 20s linear;
@@ -22,7 +49,7 @@
     font-size: calc(10px + 2vmin);
     color: white;
 }
-
+ 
 .App-link {
     color: #61dafb;
 }
@@ -36,8 +63,20 @@
     }
 }
 
+.burger{
+    height: 90px;
+    width: 90px;
+    color: #AA8E35;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
 #tsparticles {
-    position: fixed;
+    position: relative;
     height: 100%;
     width: 100%;
     margin: 0;
@@ -46,3 +85,205 @@
     top: 0;
     z-index: -1;
 }
+
+.button {
+position: absolute;
+top: 5%;
+left: 2rem;
+display: flex;
+flex-direction: column;
+justify-content: space-around;
+width:40px;
+height:40px;
+background: transparent;
+border: none;
+cursor: pointer;
+padding: 0;
+z-index: 10;
+}
+
+.button:focus {
+  outline: none;
+}
+
+.button div {
+  width: 40px;
+  height: 2px;
+  background: #AA8E35;
+
+  transition: all 0.3s linear;
+  position: relative;
+  transform-origin: 1px;
+}
+
+.button .a1 {
+transform: rotate(0);
+}
+
+.button .a2 {
+opacity: 1;
+transform: translateX(0);
+}
+
+.button .a3 {
+transform: rotate(0);
+}
+
+
+.active{
+    transform: translateX(0);
+}
+
+.button-active div{
+    background: #AA8E35;
+    
+}
+
+.button-active .a1 {
+    transform: rotate(45deg);
+}
+
+.button-active .a2 {
+    opacity: 0;
+    transform: translateX(20);
+}
+
+.button-active .a3 {
+    transform:rotate(-45deg);
+}
+
+nav{
+    display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #1c1c1a;
+  height: 100vh;
+  text-align: left;
+  padding: 2rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-100%);
+  /*width: 50%;*/
+  width: 45%;
+  transition: transform 0.3s ease-in-out;
+}
+
+nav:hover {
+    color: #AA8E35;
+}
+
+.logo{
+    text-align: center;
+    font-family: 'GreatVibes';
+    font-size: 4rem;
+    color: #fff;
+}
+
+.tarot-form {
+    background: #282828;
+    color: #fff;
+    text-align: center;
+    border-radius: 35px;
+    border-color: #707070;
+}
+
+.welcome{
+     color: #fff;
+     text-align: center;
+}
+
+.btn-consultar{
+    border-radius: 60px;
+    background-color: #282828;
+    border-color: #AA8E35;
+    color: #fff;
+    transition: all 0.5s;
+}
+
+.btn-consultar:hover{
+    border-radius: 60px;
+    background-color: #AA8E35;
+    border-color: #282828;
+    color: #fff;
+}
+
+body{
+    color: #fff;
+    font-family: 'Raleway';
+    transition: all 0.3s linear;
+}
+
+.info{
+    float: right;
+    /*width: 50%;*/
+    width: 55%;
+    padding: 2rem;
+    opacity: 0;
+    transition: all 0.3s linear;
+}
+
+.zodiac-image{
+    /* height: 450px; */
+    height:30rem;
+}
+
+.zodiac-sign-name{
+    font-size: 3.5rem;
+}
+
+.zodiac-icon-desc{
+    margin-top: -100px;
+}
+
+.info-text{
+    font-size: 1rem;
+    /* width: 85%; */
+    margin: auto;
+    text-align: left;
+}
+
+.features-zodiac{
+    font-size: 0.95rem;
+    text-align: left;
+}
+
+.compatibility-sign{
+    font-size: 1rem;
+    text-align: right;
+}
+
+.progress{
+    height: 5px;
+    background-color: #fff;
+}
+
+.progress div{
+    background-color: #AA8E35;
+}
+
+.active{
+    opacity: 1;
+}
+
+/*scroll bar*/
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: #212121;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #AA8E35; 
+    border-radius: 30px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #AA8E35; 
+  }

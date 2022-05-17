@@ -1,0 +1,36 @@
+{
+    "signos": [
+        {
+            "nombre": "Acuario ♒",
+            "name": "aquarius",
+            "descripcion": "Los Acuario tienen una personalidad fuerte y atractiva. Hay dos tipos de Acuario: uno es tímido, sensible, y paciente. El otro tipo es exuberante, vivo y puede llegar a esconder las profundidades de su personalidad debajo de un aire frívolo.",
+            "periodo": " Desde el 21 de Enero al 19 de Febrero.",
+            "Elemento": " Aire",
+            "Estación": " Invierno.",
+            "Caracter": " Muy sociables.",
+            "A favor": " Son muy altruistas",
+            "En contra": "Imprevisibles y tozudos.",
+            "Día de la semana": " Sábado.",
+            "Color": "Turquesa",
+            "Planeta": " Urano",
+            "Perfumes": " Helecho y Espliego",
+            "Piedras Preciosas": " Amatista y Aguamarina",
+            "Metales": " Aluminio",
+            "Numeros de la suerte": " 3,37,12,16,21",
+            "compatibilidades" : [
+                {
+                    "nombre": "Acuario",
+                    "compatibilidad": 100
+                },
+                {
+                    "nombre": "Acuario",
+                    "compatibilidad": 50
+                },
+                {
+                    "nombre": "Acuario",
+                    "compatibilidad": 24
+                }
+            ]
+        }
+    ]
+}
