@@ -1,42 +1,66 @@
-import React from 'react'
+import React, {useState} from 'react'
+import getSign from '../libs';
 
-export default function TarotForm() {
+export default function TarotForm({setConsultado, setHoroscopo}) {
+
+  const comenzarConsulta = (e) => {
+    e.preventDefault();
+
+    let aux = getSign(datos.dateOfBirth);
+    setConsultado(aux.signo);
+    setHoroscopo(aux.horoscopo);
+  };
+
+  const [datos, setDatos] = useState({
+      fullname: '',
+      dateOfBirth: '',
+      gender: ''
+  })
+
+  const handleInputChange = (event) => {
+    setDatos({
+      ...datos,
+      [event.target.name] : event.target.value
+  })
+  }
+
   return (
-    <div className="container-fluid">
-      <div className="row d-flex justify-content-center">
-        <img
-          className="col-5"
-          src="../luna-magica-logo.png"
-          style={{ marginTop: "-70px" }}
-          alt="logo"
-          height="509px"
-        />
-        <h1 className="col-12 logo">Luna Magica</h1>
-      </div>
-      <div className="row d-flex justify-content-center">
-        <form className="col-7">
+        <form className="col-7" onSubmit={comenzarConsulta}>
           <h4 className="welcome">Bienvenido</h4>
           <div className="mb-3 mt-3">
             <input
               className="form-control tarot-form"
-              id="exampleFormControlInput1"
+              id="fullname"
+              name="fullname"
               placeholder="Nombre Completo"
+              onChange={handleInputChange}
+              required
             />
           </div>
           <div className="row mt-3">
             <div className="mb-3 col-6">
               <input
                 className="form-control tarot-form"
-                id="exampleFormControlInput1"
+                id="dateOfBirth"
+                name="dateOfBirth"
                 placeholder="Fecha Nacimiento"
+                type="date"
+                onChange={handleInputChange}
+                required
               />
             </div>
-            <div className="mb-3 col-6">
-              <input
+            <div className="mb-3 col-6 content-select">
+              <select 
                 className="form-control tarot-form"
-                id="exampleFormControlInput1"
+                id="gender"
+                name="gender"
                 placeholder="Genero"
-              />
+                onChange={handleInputChange}
+                required
+              >
+                <option value="1">Femenino</option>
+                <option value="2">Masculino</option>
+              </select>
             </div>
           </div>
           <div className="text-center mt-3">
@@ -45,7 +69,6 @@ export default function TarotForm() {
             </button>
           </div>
         </form>
-      </div>
-    </div>
+
   );
 }

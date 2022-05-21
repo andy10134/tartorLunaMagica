@@ -5,18 +5,21 @@ import './App.css';
 import Burger from './components/Burger';
 import Info from './components/Info';
 import Menu from './components/Menu';
+import TarotForm from './components/TarotForm';
 import particlesOptions from "./particles.json";
 
 function App() {
     const particlesInit = useCallback(main => {
         loadFull(main);
     }, [])
+    
     const [open, setOpen] = useState(false);
-    const [consultado, setConsultado ] = useState(false);
-      
+    const [consultado, setConsultado ] = useState('');
+    const [horoscopo, setHoroscopo ] = useState('');
+
     let styles = {'overflowY': 'hidden'}
 
-    if(open){
+    if(open && consultado){
         styles = {'overflowY': 'scroll'}
     }
 
@@ -25,8 +28,10 @@ function App() {
             <div className="container-fluid">
                 <div className="hero" style={styles}>
                     <Burger open={open} setOpen={setOpen}></Burger>
-                    <Menu open={open} setOpen={setOpen} consultado={consultado} setConsultado={setConsultado}></Menu>
-                    <Info open={open} consultado={consultado}></Info>
+                    <Menu open={open} setOpen={setOpen} consultado={consultado}>
+                        <TarotForm setConsultado={setConsultado} setHoroscopo={setHoroscopo}></TarotForm>
+                    </Menu>
+                    <Info open={open} consultado={consultado} horoscopo={horoscopo}></Info>
                     <Particles options={particlesOptions} init={particlesInit}>
                     </Particles>
                 </div>

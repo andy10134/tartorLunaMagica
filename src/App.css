@@ -186,7 +186,43 @@ nav:hover {
     text-align: center;
     border-radius: 35px;
     border-color: #707070;
+    transition: all 0.25s ease;
 }
+
+.tarot-form:focus{
+    background: #707070;
+    color: #fff;
+    text-align: center;
+    border-radius: 35px;
+    border-color: #282828;
+}
+
+/*select styles*/
+.content-select select{
+	appearance: none;
+	-webkit-appearance: none;
+	-moz-appearance: none;
+}
+
+.content-select select::-ms-expand {
+    display: none;
+}
+
+.content-select select{
+	display: inline-block;
+	width: 100%;
+	cursor: pointer;
+	border-radius: 35px;
+	font-size: 1em;
+	color: #fff;
+    transition: all 0.25s ease;
+}
+ 
+.content-select select:hover{
+	background: #282828;
+    color: #999;
+}
+/*select styles*/
 
 .welcome{
      color: #fff;
