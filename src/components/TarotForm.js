@@ -1,7 +1,7 @@
-import React, {useState} from 'react'
+import React from 'react'
 import getSign from '../libs';
 
-export default function TarotForm({setConsultado, setHoroscopo}) {
+export default function TarotForm({setConsultado, setHoroscopo, datos, setDatos}) {
 
   const comenzarConsulta = (e) => {
     e.preventDefault();
@@ -10,12 +10,6 @@ export default function TarotForm({setConsultado, setHoroscopo}) {
     setConsultado(aux.signo);
     setHoroscopo(aux.horoscopo);
   };
-
-  const [datos, setDatos] = useState({
-      fullname: '',
-      dateOfBirth: '',
-      gender: ''
-  })
 
   const handleInputChange = (event) => {
     setDatos({
@@ -56,10 +50,11 @@ export default function TarotForm({setConsultado, setHoroscopo}) {
                 name="gender"
                 placeholder="Genero"
                 onChange={handleInputChange}
+                defaultValue="Femenino"
                 required
               >
-                <option value="1">Femenino</option>
-                <option value="2">Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Masculino">Masculino</option>
               </select>
             </div>
           </div>

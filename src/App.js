@@ -1,4 +1,4 @@
-import React, { useCallback, useState } from 'react';
+import React, { useCallback, useState, useEffect } from 'react';
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import './App.css';
@@ -13,9 +13,27 @@ function App() {
         loadFull(main);
     }, [])
     
+    const [datos, setDatos] = useState({
+        fullname: '',
+        dateOfBirth: '',
+        gender: ''
+    })
+    
     const [open, setOpen] = useState(false);
     const [consultado, setConsultado ] = useState('');
     const [horoscopo, setHoroscopo ] = useState('');
+    const [cartas, setCartas ] = useState(null);
+
+    useEffect(() => {
+        if(consultado !== '' ){
+            fetch("https://rws-cards-api.herokuapp.com/api/v1/cards/random?n=3")
+            .then(response => response.json())
+            .then(response => {
+                setCartas(response.cards)
+            });
+        }
+    }, [consultado]);
+    
 
     let styles = {'overflowY': 'hidden'}
 
@@ -28,10 +46,10 @@ function App() {
             <div className="container-fluid">
                 <div className="hero" style={styles}>
                     <Burger open={open} setOpen={setOpen}></Burger>
-                    <Menu open={open} setOpen={setOpen} consultado={consultado}>
-                        <TarotForm setConsultado={setConsultado} setHoroscopo={setHoroscopo}></TarotForm>
+                    <Menu open={open} setOpen={setOpen} consultado={consultado} cartas={cartas}>
+                        <TarotForm setConsultado={setConsultado} setHoroscopo={setHoroscopo} datos={datos} setDatos={setDatos}></TarotForm>
                     </Menu>
-                    <Info open={open} consultado={consultado} horoscopo={horoscopo}></Info>
+                    <Info open={open} consultado={consultado} horoscopo={horoscopo} datos={datos}></Info>
                     <Particles options={particlesOptions} init={particlesInit}>
                     </Particles>
                 </div>

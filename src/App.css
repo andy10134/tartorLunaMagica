@@ -166,6 +166,7 @@ nav{
   transform: translateX(-100%);
   /*width: 50%;*/
   width: 45%;
+  transition: background-color 0.5s ease-in-out;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -179,6 +180,29 @@ nav:hover {
     font-size: 4rem;
     color: #fff;
 }
+
+/*tarot consultado*/
+.tarot-desk{
+    background-color: #000;
+    transition: all 0.5s ease-in-out;
+}
+
+.tarot-card{
+    width: 100%;
+    transition: all 0.6s ease-in-out;
+}
+
+.tarot-card-desc{
+    font-size: 0.95rem;
+    text-align: left;
+    color:#fff;
+    transition: all 0.6s ease-in-out;
+}
+
+.tarot-card-desc:hover{
+    color: #fff;
+}
+/*tarot consultado*/
 
 .tarot-form {
     background: #282828;
@@ -196,6 +220,8 @@ nav:hover {
     border-radius: 35px;
     border-color: #282828;
 }
+
+
 
 /*select styles*/
 .content-select select{

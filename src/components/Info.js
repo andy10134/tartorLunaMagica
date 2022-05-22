@@ -1,65 +1,35 @@
-import React from "react";
-import signFeatures from '../signs-features.json';
-import CompatibilityBar from "./CompatibilityBar";
-import Feature from "./Feature";
-
-export default function Info({ open, consultado,horoscopo }) {
-  
+import React, { useEffect, useState } from "react";
+import SignFeatures from "./SignFeatures";
+export default function Info({ open, consultado, horoscopo, datos }) {
   let className = "container-fluid info";
-  
+  const [aux, setAux] = useState(false);
+
+  useEffect(() => {
+    if(consultado !== ""){
+      setTimeout(() => {
+        setAux(true)
+      }, 2000)
+    }
+  }, [consultado]);
+
   if (open) {
     className += " active";
   }
-  
-  if (consultado !== '') {
-    let sign = signFeatures[consultado];
 
+  if (consultado !== "") {
     return (
       <div className={className}>
-        <div className="row">
-          <div className="col-md-7">
-            <h1 className="zodiac-sign-name">{sign.nombre}</h1>
-            <p className="info-text">
-              {sign.descripcion}
-            </p>
-            <h1 className="zodiac-sign-name" style={{ fontSize: "2.5rem" }}>
-              Horóscopo <i className="fa-solid fa-moon"></i>
-            </h1>
-            <p className="info-text">
-              {horoscopo}
-            </p>
+        {aux ? (
+          <SignFeatures
+            horoscopo={horoscopo}
+            datos={datos}
+            consultado={consultado}
+          ></SignFeatures>
+        ) : (
+          <div className="spinner-border text-warning" role="status">
+            <span className="visually-hidden">Loading...</span>
           </div>
-          <div className="col-md-5">
-            <div className="container-fluid">
-              <div className="zodiac-image">
-                <h1 className="zodiac-icon">{sign.icon}</h1>
-              </div>
-              <div className="zodiac-icon-desc">
-                <br />
-                {sign.periodo}
-              </div>
-              <div className="mt-2 ">
-                <p className="features-zodiac">
-                  {
-                    sign.caracteristicas.map((e) => {
-                      return(<Feature name={e[0]} value={e[1]}></Feature>);
-                    })
-                  }
-                </p>
-              </div>
-              <div className="mt-2">
-                {
-                  sign.compatibilidades.map((e) => {
-                    console.log(e);
-                    return(
-                      <CompatibilityBar name={e.nombre} value={e.value}></CompatibilityBar>
-                    )
-                  })
-                }
-              </div>
-            </div>
-          </div>
-        </div>
+        )}
       </div>
     );
   } else {
