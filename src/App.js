@@ -42,7 +42,7 @@ function App() {
     }
 
     return (
-        <div className="App">
+        <div className="App" id="divToPrint">
             <div className="container-fluid">
                 <div className="hero" style={styles}>
                     <Burger open={open} setOpen={setOpen}></Burger>

@@ -1,4 +1,5 @@
 import React from "react";
+import Export from "./Export";
 
 export default function TarotCards({cartas}) {
   return (
@@ -34,10 +35,8 @@ export default function TarotCards({cartas}) {
         }
       </div>
       <div className="text-center mt-3">
-            <button type="submit" className="btn btn-consultar col-5">
-              Descargar Consulta
-            </button>
-          </div>
+            <Export></Export>
+      </div>
     </div>
   );
 }

@@ -5,18 +5,18 @@
     "descripcion": "Los Acuario tienen una personalidad fuerte y atractiva. Hay dos tipos de Acuario: uno es tímido, sensible, y paciente. El otro tipo es exuberante, vivo y puede llegar a esconder las profundidades de su personalidad debajo de un aire frívolo.",
     "periodo": " Desde el 21 de Enero al 19 de Febrero.",
     "caracteristicas": [
-      [ "Elemento", " Aire" ],
-      [ "Estación", " Invierno." ],
-      [ "Caracter", " Muy sociables." ],
-      [ "A favor", " Son muy altruistas" ],
-      [ "En contra", "Imprevisibles y tozudos." ],
-      [ "Día de la semana", " Sábado." ],
-      [ "Color", "Turquesa" ],
-      [ "Planeta", " Urano" ],
-      [ "Perfumes", " Helecho y Espliego" ],
-      [ "Piedras Preciosas", " Amatista y Aguamarina" ],
-      [ "Metales", " Aluminio" ],
-      [ "Numeros de la suerte", " 3,37,12,16,21" ]
+      ["Elemento", " Aire"],
+      ["Estación", " Invierno."],
+      ["Caracter", " Muy sociables."],
+      ["A favor", " Son muy altruistas"],
+      ["En contra", "Imprevisibles y tozudos."],
+      ["Día de la semana", " Sábado."],
+      ["Color", "Turquesa"],
+      ["Planeta", " Urano"],
+      ["Perfumes", " Helecho y Espliego"],
+      ["Piedras Preciosas", " Amatista y Aguamarina"],
+      ["Metales", " Aluminio"],
+      ["Numeros de la suerte", " 3,37,12,16,21"]
     ],
     "compatibilidades": [
       {
@@ -30,6 +30,386 @@
       {
         "nombre": "Piscis",
         "value": 24
+      }
+    ]
+  },
+  "virgo": {
+    "nombre": "Virgo ♍",
+    "icon": "h",
+    "descripcion": "Los Virgos simbolizan la búsqueda de la perfección, la crítica, el análisis, la lógica, el sistema, la laboriosidad, el detalle, las ocupaciones subalternas, el proletariado, el servicio, la salud, las artesanías, la eficiencia, las fábricas y los animales domésticos.",
+    "periodo": " Desde el 24 de Agosto al 22 de Septiembre",
+    "caracteristicas": [
+      ["Elemento", " Tierra"],
+      ["Estación", " Verano."],
+      ["Caracter", " Perfeccionistas "],
+      ["A favor", " Muy serviciales "],
+      ["En contra", "Algo tacaños e irresponsables"],
+      ["Día de la semana", " Miércoles"],
+      ["Color", "Verde oscuro"],
+      ["Planeta", " Mercurio"],
+      ["Perfumes", " Acacia"],
+      ["Piedras Preciosas", " Topacio"],
+      ["Metales", " Mercurio"],
+      ["Numeros de la suerte", " 35,55,21,8,51,54"]
+    ],
+    "compatibilidades": [
+      {
+        "nombre": "Acuario",
+        "value": 100
+      },
+      {
+        "nombre": "Geminis",
+        "value": 76
+      },
+      {
+        "nombre": "Cancer",
+        "value": 43
+      }
+    ]
+  },
+  "pisces": {
+    "nombre": "Piscis ♓",
+    "icon": "b",
+    "descripcion": "Los Acuario tienen una personalidad fuerte y atractiva. Hay dos tipos de Acuario: uno es tímido, sensible, y paciente. El otro tipo es exuberante, vivo y puede llegar a esconder las profundidades de su personalidad debajo de un aire frívolo.",
+    "periodo": "Desde el de 20 de Febrero al 20 de Marzo.",
+    "caracteristicas": [
+      ["Elemento", " Agua"],
+      ["Estación", " Invierno."],
+      ["Caracter", " Tolerantes"],
+      [
+        "A favor",
+        " Excelentes como pareja, son muy románticos, cariñosos y amables"
+      ],
+      ["En contra", "Excesivamente despistados y algo tímidos."],
+      ["Día de la semana", " Jueves."],
+      ["Color", "Verde Marino y Añil"],
+      ["Planeta", " Neptuno"],
+      ["Perfumes", "Alheli y Rosa"],
+      ["Piedras Preciosas", "Zafiro"],
+      ["Metales", " Paladio"],
+      ["Numeros de la suerte", "18,30,41,56,25,43"]
+    ],
+    "compatibilidades": [
+      {
+        "nombre": "Virgo",
+        "value": 95
+      },
+      {
+        "nombre": "Tauro",
+        "value": 30
+      },
+      {
+        "nombre": "Piscis",
+        "value": 15
+      }
+    ]
+  },
+  "gemini": {
+    "nombre": "Geminis ♊",
+    "icon": "e",
+    "descripcion": "La dualidad de la mente, la capacidad de ver las dos caras de una misma moneda y la versatilidad. El elemento aéreo, las comunicaciones, la dualidad, la iniciativa en los negocios, el comercio, el trabajo intelectual, los viajes, los hermanos, los amigos de la infancia, los escritos, los idiomas y la mente concreta.",
+    "periodo": "Desde el 22 de Mayo al 21 de Junio.",
+    "caracteristicas": [
+      ["Elemento", " Aire"],
+      ["Estación", " Primavera."],
+      ["Caracter", " Divertidos"],
+      [
+        "A favor",
+        " Increíblemente divertidos y joviales, amables y elocuentes"
+      ],
+      ["En contra", "Son bastante charlatanes, mentirosos y muy superficiales"],
+      ["Día de la semana", " Miércoles."],
+      ["Color", "Amarillo"],
+      ["Planeta", " Mercurio"],
+      ["Perfumes", "Jacinto"],
+      ["Piedras Preciosas", "Ágata"],
+      ["Metales", "Ópalo"],
+      ["Numeros de la suerte", "18,55,36,23,32,49"]
+    ],
+    "compatibilidades": [
+      {
+        "nombre": "Acuario",
+        "value": 80
+      },
+      {
+        "nombre": "Geminis",
+        "value": 45
+      },
+      {
+        "nombre": "Tauro",
+        "value": 25
+      }
+    ]
+  },
+  "cancer": {
+    "nombre": "Cancer ♋",
+    "icon": "f",
+    "descripcion": "Los Cancerianos representan las altas y bajas emocionales que se mueven como el cangrejo y que finalmente se esconden en su caparazón. La maternidad, los partos, el amor maternal, la familia, la patria la casa, la cocina, las masas, las mujeres, los ríos, el sentimiento y la imaginación.",
+    "periodo": " Desde el 22 de Junio al 22 de Julio.",
+    "caracteristicas": [
+      [ "Elemento", " Agua" ],
+      [ "Estación", " Verano." ],
+      [ "Caracter", " Muy introvertidos " ],
+      [ "A favor", " Increíblemente divertidos y joviales, amables y elocuentes " ],
+      [ "En contra", "Muy irritables, rencorosos y algo perezosos" ],
+      [ "Día de la semana", " Lunes" ],
+      [ "Color", "Blanco, Gris y Violeta" ],
+      [ "Planeta", " Luna" ],
+      [ "Perfumes", " Lirio" ],
+      [ "Piedras Preciosas", " Perlas" ],
+      [ "Metales", " Plata" ],
+      [ "Numeros de la suerte", " 20 27 44 13 19 4" ]
+    ],
+    "compatibilidades": [
+      {
+        "nombre": "Tauro",
+        "value": 34
+      },
+      {
+        "nombre": "Leo",
+        "value": 12
+      },
+      {
+        "nombre": "Escorpio",
+        "value": 96
+      }
+    ]
+  },
+  "capricorn": {
+    "nombre": "Capricornio ♏",
+    "icon": "l",
+    "descripcion": "La política, la tierra, los lugares elevados, las montañas, las cimas, los lugares aislados e inaccesibles, las luchas, los obstáculos e impedimentos, la mala suerte, los reveses de fortuna, las carreras brillantes, la decadencia, el tiempo, la noche, los viejos, las deformidades, el invierno, el frío, las minas, el deber cívico y las ambiciones profesionales.",
+    "periodo": "Desde el 24 de Octubre al 22 de Noviembre.",
+    "caracteristicas": [
+      [ "Elemento", "Tierra" ],
+      [ "Estación", "Invierno." ],
+      [ "Caracter", "Generosos." ],
+      [ "A favor", "Ambiciosos, decididos y cuidadosos." ],
+      [ "En contra", "Son pesimistas, tímidos y rencorosos." ],
+      [ "Día de la semana", "Sábado" ],
+      [ "Color", "Gris Oscuro, Marrón, Negro y Castaño" ],
+      [ "Planeta", "Saturno" ],
+      [ "Perfumes", "Todos los aromas naturales" ],
+      [ "Piedras Preciosas", "Turquesa, Amatista y Azabache" ],
+      [ "Metales", "Plomo" ],
+      [ "Numeros de la suerte", "37,9,51,44,18,33" ]
+    ],
+    "compatibilidades": [
+      {
+        "nombre": "Cancer",
+        "value": 80
+      },
+      {
+        "nombre": "Virgo",
+        "value": 55
+      },
+      {
+        "nombre": "Sagitario",
+        "value": 68
+      }
+    ]
+  },
+  "taurus": {
+    "nombre": "Tauro ♉",
+    "icon": "d",
+    "descripcion": "Los Taurinos se caracterízan por la fuerza de voluntad, la permanencia, la firmeza, la perseverancia, la estabilidad, la concreción, la resistencia, la fuerza, la sensualidad, la buena mesa, la forma, la música, el talento vocal, los sentimientos duraderos, la naturaleza, la agricultura y la banca.",
+    "periodo": " Desde el 21 de Abril al 20 de Mayo.",
+    "caracteristicas": [
+      [ "Elemento", " Tierra" ],
+      [ "Estación", " Primavera" ],
+      [ "Caracter", " Paciente" ],
+      [ "A favor", " Son muy tranquilos, tienen mucha paciencia y un don para el ahorro " ],
+      [ "En contra", "Muy tozudos y gruñones, algo avaros y rencorosos" ],
+      [ "Día de la semana", " Viernes" ],
+      [ "Color", "Verde y Azul" ],
+      [ "Planeta", " Venus" ],
+      [ "Perfumes", " Violeta" ],
+      [ "Piedras Preciosas", " Aguamarina y esmeralda" ],
+      [ "Metales", " Cobre" ],
+      [ "Numeros de la suerte", " 34, 15, 32, 7, 51, 36" ]
+    ],
+    "compatibilidades": [
+      {
+        "nombre": "Cáncer",
+        "value": 43
+      },
+      {
+        "nombre": "Sagitario",
+        "value": 18
+      },
+      {
+        "nombre": "Leo",
+        "value": 86
+      }
+    ]
+  },
+  "scorpio": {
+    "nombre": "Escorpio ♏",
+    "icon": "j",
+    "descripcion": "Su tenacidad y fuerza de voluntad son únicas pero sin embargo son muy sensibles y fácilmente afectados por las circunstancias que les rodean.",
+    "periodo": "Desde el 24 de Octubre al 22 de Noviembre.",
+    "caracteristicas": [
+      [ "Elemento", " Agua" ],
+      [ "Estación", " Otoño" ],
+      [ "Caracter", "Muy introvertidos" ],
+      [ "A favor", " Increíblemente divertidos y joviales, amables y elocuentes " ],
+      [ "En contra", "Una actitud muy destructiva" ],
+      [ "Día de la semana", " Martes" ],
+      [ "Color", "Granate o Rojo Intenso" ],
+      [ "Planeta", " Plutón" ],
+      [ "Perfumes", " Lirio" ],
+      [ "Piedras Preciosas", "ópalo, rubí y obsidiana" ],
+      [ "Metales", " Hierro, plutonio" ],
+      [ "Numeros de la suerte", "2,9,25" ]
+    ],
+    "compatibilidades": [
+      {
+        "nombre": "Aries",
+        "value": 85
+      },
+      {
+        "nombre": "Géminis",
+        "value": 66
+      },
+      {
+        "nombre": "Cáncer",
+        "value": 35
+      }
+    ]
+  },
+  "sagitarius": {
+    "nombre": "Sagitario ♐",
+    "icon": "k",
+    "descripcion": "Los Sagitario se caracterízan por los viajes largos, la filosofía, las leyes, la religión, los altos cargos eclesiásticos, la profecía, la mente abstracta, las aventuras, el comercio con el extranjero, la navegación intercontinental, la vida al aire libre, los ejercicios físicos, las carreras de caballos, la velocidad, las apuestas, los sabios, los estudios superiores y la independencia.",
+    "periodo": " Desde el 23 de Noviembre al 21 de Diciembre",
+    "caracteristicas": [
+      [ "Elemento", " Fuego" ],
+      [ "Estación", " Otoño" ],
+      [ "Caracter", " Sinceros" ],
+      [ "A favor", " Estupendos deportistas, muy alegres y joviales. Son muy estudiosos " ],
+      [ "En contra", "Son algo temerarios, radicales y caprichosos" ],
+      [ "Día de la semana", " Jueves" ],
+      [ "Color", "Púrpura, azul, violeta y amar" ],
+      [ "Planeta", "Júpiter" ],
+      [ "Perfumes", " Violeta, Tomillo, Laurel." ],
+      [ "Piedras Preciosas", " Topacio, Esmeralda, Zafiro, Turquesa y Amatista" ],
+      [ "Metales", " Estaño" ],
+      [ "Numeros de la suerte", " 48, 15, 47, 29, 44, 23" ]
+    ],
+    "compatibilidades": [
+      {
+        "nombre": "Aries",
+        "value": 76
+      },
+      {
+        "nombre": "Leo",
+        "value": 54
+      },
+      {
+        "nombre": "Acuario",
+        "value": 31
+      }
+    ]
+  },
+  "aries": {
+    "nombre": "Aries ♈",
+    "icon": "c",
+    "descripcion": "Los Arianos se caracterízan por los comienzos, el principio, la mañana, la primavera, los animales carnívoros, los jefes, el mando, la fuerza, la violencia, el impulso, la autoridad, la virilidad, la juventud, las armas, los accidentes en la cabeza, peligro por el hierro, el fuego y las armas.",
+    "periodo": " Desde el 21 de marzo al 20 de Abril.",
+    "caracteristicas": [
+      [ "Elemento", " Fuego" ],
+      [ "Estación", " Primavera" ],
+      [ "Caracter", " Impetuosos" ],
+      [ "A favor", "  Su sentido del deber, son muy trabajadores, emprendedores y enérgicos " ],
+      [ "En contra", "Son demasiado posesivos. Algo rebeldes y agresivos." ],
+      [ "Día de la semana", " Martes" ],
+      [ "Color", "Rojo" ],
+      [ "Planeta", "Marte" ],
+      [ "Perfumes", " Sándalo" ],
+      [ "Piedras Preciosas", " Topacio, Esmeralda, Zafiro, Turquesa y Amatista" ],
+      [ "Metales", " Hierro" ],
+      [ "Numeros de la suerte", " 17, 18, 4, 40, 41, 55" ]
+    ],
+    "compatibilidades": [
+      {
+        "nombre": "Leo",
+        "value": 92
+      },
+      {
+        "nombre": "Tauro",
+        "value": 84
+      },
+      {
+        "nombre": "Acuario",
+        "value": 81
+      }
+    ]
+  },
+  "leo": {
+    "nombre": "Leo ♌",
+    "icon": "g",
+    "descripcion": "Los Leo se caracterízan por la energía, la creatividad, los juegos, las especulaciones, el orgullo, la vanidad, la realeza, la diversión, los deportes, los espectáculos, la niñez, la educación, la elevación, la gloria, la fama, el poder",
+    "periodo": " Desde el 23 de Julio al 23 de Agosto",
+    "caracteristicas": [
+      [ "Elemento", " Fuego" ],
+      [ "Estación", " Verano" ],
+      [ "Caracter", " Optimistas" ],
+      [ "A favor", "   Generosos, entusiastas con su trabajo. Buenos lideres " ],
+      [ "En contra", "Suelen ser prepotentes, inmaduros y algo infantiles" ],
+      [ "Día de la semana", " Domingo" ],
+      [ "Color", "Amarillo" ],
+      [ "Planeta", "Sol" ],
+      [ "Perfumes", "Rosa" ],
+      [ "Piedras Preciosas", " Diamantes" ],
+      [ "Metales", " Oro" ],
+      [ "Numeros de la suerte", " 32, 36, 11, 20, 13, 21" ]
+    ],
+    "compatibilidades": [
+      {
+        "nombre": "Escorpio",
+        "value": 90
+      },
+      {
+        "nombre": "Sagitario",
+        "value": 64
+      },
+      {
+        "nombre": "Aries",
+        "value": 55
+      }
+    ]
+  },
+  "libra": {
+    "nombre": "Libra ♎",
+    "icon": "i",
+    "descripcion": "Los libras se caracterizan por  La justicia, la equidad, el equilibrio, el principio complementario, los acuerdos, las relaciones, la belleza, la cultura artística, la armonía, el refinamiento, el otoño, la diplomacia y los contratos.",
+    "periodo": " 23 de Septiembre al 22 de Octubre",
+     "caracteristicas": [
+      [ "Elemento", " Aire" ],
+      [ "Estación", " Otoño" ],
+      [ "Caracter", " Amables" ],
+      [ "A favor", " Son muy sociables, delicados y con grandes dotes artísticas" ],
+      [ "En contra", "Indecisos, superficiales y muy coquetos" ],
+      [ "Día de la semana", " Viernes" ],
+      [ "Color", " Dorado" ],
+      [ "Planeta", "Venus" ],
+      [ "Perfumes", " Jaciento y Rosa" ],
+      [ "Piedras Preciosas", " Coral y Berilo Rosa" ],
+      [ "Metales", " Bronce y Cobre" ],
+      [ "Numeros de la suerte", " 34, 15, 47, 27, 44, 20" ]
+    ],
+    "compatibilidades": [
+      {
+        "nombre": "Leo",
+        "value": 76
+      },
+      {
+        "nombre": "Sagitario",
+        "value": 54
+      },
+      {
+        "nombre": "Piscis",
+        "value": 31
       }
     ]
   }
